@@ -1,5 +1,5 @@
 {
-  "name": "htmlSourcesScanner",
+  "name": "htmlsourcesscanner",
   "description": "Scans a html file for its included sources",
   "version": "0.1.0",
   "homepage": "https://github.com/mjongh/htmlSourcesScanner",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/marcodejongh/htmlSourcesScanner.git"
+    "url": "git://github.com/marcodejongh/htmlsourcesscanner.git"
   },
   "bugs": {
-    "url": "https://github.com/marcodejongh/htmlSourcesScanner/issues"
+    "url": "https://github.com/marcodejongh/htmlsourcesscanner/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/marcodejongh/htmlSourcesScanner/blob/master/LICENSE-MIT"
+      "url": "https://github.com/marcodejongh/htmlsourcesscanner/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/htmlSourcesScanner",
+  "main": "lib/htmlsourcesscanner",
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -33,8 +33,5 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt": "~0.4.1"
   },
-  "keywords": [],
-  "dependencies": {
-    "lodash-node": "~2.4.1"
-  }
+  "keywords": []
 }
