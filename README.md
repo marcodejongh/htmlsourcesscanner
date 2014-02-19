@@ -7,7 +7,7 @@ Install the module with: `npm install htmlSourcesScanner`
 
 ```javascript
 var htmlSourcesScanner = require('htmlSourcesScanner');
-htmlSourcesScanner.awesome(); // "awesome"
+htmlSourcesScanner.scanSync(); // "awesome"
 ```
 
 ## Documentation
