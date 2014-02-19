@@ -1,13 +1,13 @@
-# htmlSourcesScanner
+# htmlsourcesscanner
 
 Scans a html file for its included sources
 
 ## Getting Started
-Install the module with: `npm install htmlSourcesScanner`
+Install the module with: `npm install htmlsourcesscanner`
 
 ```javascript
-var htmlSourcesScanner = require('htmlSourcesScanner');
-htmlSourcesScanner.scanSync(); // "awesome"
+var htmlsourcesscanner = require('htmlsourcesscanner');
+htmlsourcesscanner.scanSync(); // "awesome"
 ```
 
 ## Documentation
