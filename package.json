@@ -1,7 +1,7 @@
 {
   "name": "htmlsourcesscanner",
   "description": "Scans a html file for its included sources",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/mjongh/htmlSourcesScanner",
   "author": {
     "name": "Marco de Jongh",
@@ -33,5 +33,8 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt": "~0.4.1"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "lodash-node": "~2.4.1"
+  }
 }

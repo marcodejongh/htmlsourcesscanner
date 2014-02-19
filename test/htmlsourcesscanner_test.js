@@ -36,8 +36,16 @@ exports['scanSync'] = {
 	'testFile1.html': function(test) {
 		test.expect(2);
 		var result = htmlsourcesscanner.scanSync('./test/testFile1.html');
-		test.deepEqual(result.js, ['file1.js', 'file2.js', 'file3.js'], 'Should return an array with the included js files');
-		test.deepEqual(result.css, ['lib/CodeMirror/codemirror.css', 'css/ie7.css'], 'Should return an array with the included css files');
+		test.deepEqual(result.js, ['https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', 'file1.js', 'file2.js', 'file3.js'], 'Should return an array with the included js files');
+		test.deepEqual(result.css, ['lib/CodeMirror/codemirror.css', 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/some.css', 'css/ie7.css'], 'Should return an array with the included css files');
+		test.done();
+	},
+	'testFile1.html With options.excludeExternal = true': function(test) {
+		test.expect(2);
+		var options = {excludeExternal: true},
+				result = htmlsourcesscanner.scanSync('./test/testFile1.html', options);
+		test.deepEqual(result.js, ['file1.js', 'file2.js', 'file3.js'], 'Should return an array with the included js files WITHOUT the external files');
+		test.deepEqual(result.css, ['lib/CodeMirror/codemirror.css', 'css/ie7.css'], 'Should return an array with the included css files WITHOUT the external files');
 		test.done();
 	}
 };
